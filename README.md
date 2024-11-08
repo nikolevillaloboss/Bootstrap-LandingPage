@@ -1,7 +1,7 @@
 Ny Tours
 Project Description:
 
-Ny Tours is an introductory project that showcases the use of Bootstrap to create a modern and responsive landing page. 
+Ny Tours is a responsive project that showcases the use of Bootstrap to create a modern and responsive landing page. 
 Key Features:
 
 User-Friendly Interface: The landing page features a clean and easy-to-navigate design, allowing visitors to book tours with just a few clicks.
