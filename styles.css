@@ -1,0 +1,80 @@
+/* 
+  Global Styles
+  - Apply global margin and background color
+  - Set the default font color and family
+*/
+body {
+  margin: 0;
+  background-color: #202020;
+  color: rgb(198, 200, 202);
+  font-family: 'Poppins', sans-serif; /* Use Poppins font from Google Fonts */
+}
+
+/* 
+Slider Styles
+- Ensure the slider list continues after the last item
+- Pause the slider animation on hover
+*/
+.list::after {
+  content: '';
+  display: block;
+  width: 100%;
+}
+
+.slider:hover .list {
+  animation-play-state: paused;
+}
+
+/* 
+Navbar Styles
+- Set transparent background with blur effect
+- Adjust padding and positioning
+*/
+.navbar-custom {
+  background-color: rgba(255, 255, 255, 0); /* Transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
+  border-radius: 100px;
+  padding: 10px;
+  height: var(--height);
+  position: absolute;
+  top: 50px;
+}
+
+/* 
+Hero Section Styles
+- Define height for carousel items and adjust video settings
+*/
+.c-item {
+  height: 480px; /* Fixed height for carousel items */
+}
+
+.c-vid {
+  height: 100%; /* Full height for videos */
+  object-fit: cover; /* Ensure videos cover the entire area */
+  filter: brightness(0.6); /* Darken videos for better text visibility */
+}
+
+/* 
+Overview Section Styles
+- Set height and background color for the overview section
+*/
+.c-overview {
+  height: 180px;
+  background-color: black;
+}
+
+/* 
+Card Styles
+- Add bottom margin for spacing between cards
+- Set fixed height for images to ensure uniformity
+*/
+.card-custom {
+  margin-bottom: 70px; /* Space between cards */
+}
+
+.card-custom img {
+  height: 300px; /* Fixed height for images */
+  width: 100%; /* Ensure images cover the width of the card */
+  object-fit: cover; /* Maintain aspect ratio and cover entire area */
+}
